@@ -72,7 +72,7 @@ def RemoveStopCodons(path=''):
 
 				#Write outputted sequence to a new .fas file
 				if sequence_num == 1:
-					with open('C:/Users/lanieldukich/Remove_Stop_Codons/output.fas','w') as output:
+					with open('output.fas','w') as output:
 						output.write(header)
 						#Turn new_seq into a list of <= 79 character nucleotide
 						#chunks
@@ -82,7 +82,7 @@ def RemoveStopCodons(path=''):
 							output.write('\n')
 						output.write('\n')
 				else:
-					with open('C:/Users/lanieldukich/Remove_Stop_Codons/output.fas','a') as output:
+					with open('output.fas','a') as output:
 						output.write(header)
 
 						wrapped_sequence = textwrap.wrap(new_seq)
